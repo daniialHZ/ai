@@ -2,16 +2,26 @@
 <html>
 <head>
   <title>High Climbing Algorithm</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="Genetics Algorithm/styles.css">
 </head>
 <body>
-  <h1>High Climbing Algorithm</h1>
-
+  <nav>
+    <ul>
+      <li><a href="./high-Climbing.html">High Climbing</a></li>
+      <li><a href="./Genetics%20Algorithm/genetics-algorithm.html">Genetics</a></li>
+    </ul>
+  </nav>
   <div class="container">
+    <h1>High Climbing Algorithm</h1>
+
     <label for="numbers">Enter numbers (comma-separated):</label>
-    <input type="text" id="numbers" placeholder="e.g., 5, 2, 9, 1, 7">
-    <button onclick="findMax()">Find Maximum</button>
-    <p id="result"></p>
+    <input type="text" id="numbers" placeholder="e.g., 5(2,8), 2(5,8), 8(2,5,1), 1(8)">
+    
+    <button onclick="solveHighClimbing()">Find Maximum</button>
+    <div id="solution">
+      <p id="bestSolution"></p>
+      <p id="neighbors"></p>
+    </div>
   </div>
 
   <script src="script.js"></script>
